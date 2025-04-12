@@ -1,0 +1,6 @@
+.text {
+    color: var(--primary);
+}
+.btn-primary{
+    background-color:var(--primary);
+}
