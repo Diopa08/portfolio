@@ -35,7 +35,7 @@
 
 
 .text {
-    color: var(--primary);
+    color: var(--light);
 }
 .btn-primary{
     background-color:var(--secondary);
@@ -43,3 +43,9 @@
 .secondary{
     background-color: var(--secondary);
 }
+
+.typed-text {
+    color: #FFA500;
+    font-weight: bold;
+  }
+  

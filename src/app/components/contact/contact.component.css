@@ -1,6 +1,19 @@
 .text {
     color: var(--primary);
 }
-.btn-primary{
+.btn-p{
     background-color:var(--primary);
 }
+.btn-orange {
+    background-color: #FFA500;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 6px;
+  }
+  
+  .form-control {
+    border-radius: 6px;
+    padding: 10px;
+  }
+  

@@ -19,115 +19,7 @@
 .btn-primary{
     background-color:var(--primary);
 }
-@keyframes blink {
-    0% {
-        opacity: 1;
-    }
-    50% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
-    }
-}
 
-.btn-play {
-    position: relative;
-    display: block;
-    box-sizing: content-box;
-    width: 16px;
-    height: 26px;
-    border-radius: 100%;
-    border: none;
-    outline: none !important;
-    padding: 18px 20px 20px 28px;
-    background: var(--primary);
-    cursor: pointer;
-}
-
-.btn-play:before {
-    content: "";
-    position: absolute;
-    z-index: 0;
-    left: 50%;
-    top: 50%;
-    transform: translateX(-50%) translateY(-50%);
-    display: block;
-    width: 60px;
-    height: 60px;
-    background: var(--primary);
-    border-radius: 100%;
-    animation: pulse-border 1500ms ease-out infinite;
-}
-
-.btn-play:after {
-    content: "";
-    position: absolute;
-    z-index: 1;
-    left: 50%;
-    top: 50%;
-    transform: translateX(-50%) translateY(-50%);
-    display: block;
-    width: 60px;
-    height: 60px;
-    background: #FFFFFF;
-    border-radius: 100%;
-    transition: all 200ms;
-}
-
-.btn-play span {
-    display: block;
-    position: relative;
-    z-index: 3;
-    width: 0;
-    height: 0;
-    left: -1px;
-    border-left: 16px solid var(--primary);
-    border-top: 11px solid transparent;
-    border-bottom: 11px solid transparent;
-}
-
-@keyframes pulse-border {
-    0% {
-        transform: translateX(-50%) translateY(-50%) translateZ(0) scale(1);
-        opacity: 1;
-    }
-
-    100% {
-        transform: translateX(-50%) translateY(-50%) translateZ(0) scale(2);
-        opacity: 0;
-    }
-}
-
-.modal-video .modal-dialog {
-    position: relative;
-    max-width: 800px;
-    margin: 60px auto 0 auto;
-    background-color: #FFFFFF;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-}
-
-.modal-video .modal-body {
-    position: relative;
-    padding: 0px;
-}
-
-.modal-video .close {
-    position: absolute;
-    width: 30px;
-    height: 30px;
-    right: 0px;
-    top: -30px;
-    z-index: 999;
-    font-size: 30px;
-    font-weight: normal;
-    color: #FFFFFF;
-    background: #000000;
-    opacity: 1;
-    border-radius: 50%;
-    cursor: pointer;
-}
 
 
 /*** About ***/
@@ -144,79 +36,67 @@
 }
    
 
-
-.typed-cursor {
-    font-size: 30px;
-    color: var(--dark);
-}
-
 .btn-play {
     position: relative;
-    display: block;
-    box-sizing: content-box;
-    width: 16px;
-    height: 26px;
-    border-radius: 100%;
+    display: inline-block;
+    width: 60px;
+    height: 60px;
     border: none;
-    outline: none !important;
-    padding: 18px 20px 20px 28px;
+    border-radius: 50%;
     background: var(--primary);
-}
-
-.btn-play:before {
+    cursor: pointer;
+    outline: none;
+  }
+  
+  .btn-play::before {
     content: "";
     position: absolute;
     z-index: 0;
-    left: 50%;
     top: 50%;
-    transform: translateX(-50%) translateY(-50%);
-    display: block;
+    left: 50%;
+    transform: translate(-50%, -50%);
     width: 60px;
     height: 60px;
     background: var(--primary);
-    border-radius: 100%;
-    animation: pulse-border 1500ms ease-out infinite;
-}
-
-.btn-play:after {
+    border-radius: 50%;
+    animation: pulse-border 1.5s ease-out infinite;
+  }
+  
+  .btn-play::after {
     content: "";
     position: absolute;
     z-index: 1;
-    left: 50%;
     top: 50%;
-    transform: translateX(-50%) translateY(-50%);
-    display: block;
+    left: 50%;
+    transform: translate(-50%, -50%);
     width: 60px;
     height: 60px;
-    background: #FFFFFF;
-    border-radius: 100%;
-    transition: all 200ms;
-}
-
-.btn-play span {
-    display: block;
+    background: #fff;
+    border-radius: 50%;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .btn-play .download-icon {
     position: relative;
     z-index: 3;
-    width: 0;
-    height: 0;
-    left: -1px;
-    border-left: 16px solid var(--primary);
-    border-top: 11px solid transparent;
-    border-bottom: 11px solid transparent;
-}
-
-@keyframes pulse-border {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    height: 60px;
+  }
+  
+  @keyframes pulse-border {
     0% {
-        transform: translateX(-50%) translateY(-50%) translateZ(0) scale(1);
-        opacity: 1;
+      transform: translate(-50%, -50%) scale(1);
+      opacity: 0.6;
     }
-
     100% {
-        transform: translateX(-50%) translateY(-50%) translateZ(0) scale(2);
-        opacity: 0;
+      transform: translate(-50%, -50%) scale(1.4);
+      opacity: 0;
     }
-}
-
+  }
+  
 .modal-video .modal-dialog {
     position: relative;
     max-width: 800px;
@@ -241,7 +121,11 @@
     background: #000000;
     opacity: 1;
 }
-
+.typed-text {
+    color: #FFA500;
+    font-weight: bold;
+  }
+  
 
 /*** About ***/
 #about .years .display-1 {
@@ -254,3 +138,71 @@
     margin-right: -30px;
 }
 
+
+.cv-download-container {
+    width: 64px;
+    height: 64px;
+    background: var(--primary, #FFA500);
+    border-radius: 50%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: transform 0.2s ease, background 0.3s ease;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    overflow: hidden;
+  }
+  
+  .cv-download-container:hover {
+    background-color: #e69500;
+  }
+  
+  .cv-download-container:active {
+    animation: bounce 0.3s ease;
+  }
+  
+  .download-icon {
+    width: 28px;
+    height: 28px;
+    z-index: 2;
+  }
+  
+  .pulse-ring {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 165, 0, 0.4);
+    border-radius: 50%;
+    animation: pulse 1.5s ease-out infinite;
+    z-index: 1;
+  }
+  
+  @keyframes pulse {
+    0% {
+      transform: scale(0.95);
+      opacity: 1;
+    }
+    70% {
+      transform: scale(1.8);
+      opacity: 0;
+    }
+    100% {
+      transform: scale(0.95);
+      opacity: 0;
+    }
+  }
+  
+  @keyframes bounce {
+    0% {
+      transform: scale(1);
+    }
+    30% {
+      transform: scale(1.2);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  

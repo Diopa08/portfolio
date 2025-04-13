@@ -1,20 +1,21 @@
 <!-- Header Start -->
-<div class="container-fluid bg-light my-6 mt-5" id="home">
+<div class="container-fluid bg-light my-6 mt-5 mb-0" id="home">
     <div class="container">
         <div class="row g-5 align-items-center">
             <div class="col-lg-6 py-6 pb-0 pt-lg-0">
-                <h3 class="text mb-3">I'm</h3>
+                <h3 class="text mb-3">Je suis</h3>
                 <h1 class="display-4 mb-3">DOSSOU Persévérance</h1>
                 <h2 class="typed-text-output d-inline"></h2>
-                <div class="typed-text d-none"> Web Developer, Front End Developer,  Apps Developer</div>
+                <div class="typed-text "> Web Developer, Front End Developer,  Apps Developer</div>
                 <div class="d-flex align-items-center pt-5">
-                    <a href="" class="btn btn-primary py-3 px-4 me-5">Download CV</a>
-                    <button type="button" class="btn-play" data-bs-toggle="modal"
-                        data-src="https://www.youtube.com/embed/DWRcNpR6Kdc" data-bs-target="#videoModal">
-                        <span></span>
-                    </button>
-                    <h5 class="ms-4 mb-0 d-none d-sm-block">Play Video</h5>
-                </div>
+                      <div class="cv-download-container" (click)="downloadCV()" title="Télécharger mon CV">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="download-icon" viewBox="0 0 24 24">
+                          <path fill="#fff" d="M5 20h14v-2H5v2zm7-18L5.33 9h3.17v6h6V9h3.17L12 2z"/>
+                        </svg>
+                        <span class="pulse-ring"></span>
+                      </div>
+                      <h5 class="ms-4 mb-0 d-none d-sm-block text-orange">Télécharger mon CV</h5>
+                      </div>
             </div>
             <div class="col-lg-6">
                 <img class="img-fluid" src="assets/img/profile rbg.png" alt="">
