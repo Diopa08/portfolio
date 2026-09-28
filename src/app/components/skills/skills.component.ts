@@ -30,6 +30,15 @@ export class SkillsComponent {
     { name: 'JavaScript', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg' },
   ];
 
+  dataSkills = [
+    { name: 'Python', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg', learning: false },
+    { name: 'NumPy', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/numpy/numpy-original.svg', learning: true },
+    { name: 'Pandas', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pandas/pandas-original.svg', learning: true },
+    { name: 'Matplotlib', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/matplotlib/matplotlib-original.svg', learning: true },
+    { name: 'PostgreSQL', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg', learning: false },
+    { name: 'MongoDB', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg', learning: false },
+  ];
+
   tools = [
     { name: 'VS Code', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg' },
     { name: 'Postman', icon: 'https://www.svgrepo.com/show/354202/postman-icon.svg' },
@@ -46,6 +55,16 @@ export class SkillsComponent {
   ];
 
   experiences = [
+    {
+      title: 'GCI World – Université de Tokyo (Matsuo-Iwasawa Lab)',
+      date: 'Septembre 2026 – en cours',
+      desc: 'Programme international de data science : Python, Numpy, Pandas, visualisation, machine learning supervisé et non supervisé, SQL, séries temporelles, compétition et projet final.'
+    },
+    {
+      title: 'Bootcamp Africa Tech Up Tour',
+      date: 'Septembre 2024',
+      desc: 'Projet data-driven pour promouvoir le tourisme béninois : collecte et exploitation de données touristiques.'
+    },
     {
       title: 'Stage - Ingénieur Logiciel (IWAJU TECH)',
       date: 'Mars - Juin 2024',
@@ -65,15 +84,16 @@ export class SkillsComponent {
       title: 'Stage Laravel (IWAJU TECH)',
       date: 'Août - Septembre 2023',
       desc: 'Développement avec Laravel, HTML, CSS, Design Web.'
-    },
-    {
-      title: 'Bootcamp Africa Tech Up Tour',
-      date: 'Septembre 2024',
-      desc: 'Projet data-driven pour promouvoir le tourisme béninois.'
     }
   ];
 
   education = [
+    {
+      ecole: 'IFRI – Université d\'Abomey-Calavi',
+      title: 'Master 1 Génie Logiciel',
+      date: 'En cours',
+      desc: 'Génie logiciel, data science, traitement d’images, cybersécurité, théorie des langages.'
+    },
     {
       ecole: 'IFRI',
       title: 'Licence en Génie Logiciel ',

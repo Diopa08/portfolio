@@ -5,6 +5,7 @@
       <h2 class="text-orange mb-4">Technologies & Outils</h2>
       <div class="mb-4">
         <button class="btn me-2" [ngClass]="{ 'btn-orange': activeSection === 'skills', 'btn-outline-orange': activeSection !== 'skills' }" (click)="activeSection = 'skills'">Compétences</button>
+        <button class="btn me-2" [ngClass]="{ 'btn-orange': activeSection === 'data', 'btn-outline-orange': activeSection !== 'data' }" (click)="activeSection = 'data'">Data</button>
         <button class="btn" [ngClass]="{ 'btn-orange': activeSection === 'tools', 'btn-outline-orange': activeSection !== 'tools' }" (click)="activeSection = 'tools'">Outils</button>
       </div>
   
@@ -16,6 +17,15 @@
         </div>
       </div>
   
+      <!-- Data -->
+      <div class="row justify-content-center mb-5" *ngIf="activeSection === 'data'">
+        <div class="col-4 col-md-2 mb-4" *ngFor="let d of dataSkills">
+          <img [src]="d.icon" [alt]="d.name" width="40" class="mb-2">
+          <p class="mb-0">{{ d.name }}</p>
+          <span *ngIf="d.learning" class="badge bg-light border text-orange">en cours</span>
+        </div>
+      </div>
+
       <!-- Outils -->
       <div class="row justify-content-center mb-5" *ngIf="activeSection === 'tools'">
         <div class="col-4 col-md-2 mb-4" *ngFor="let tool of tools">

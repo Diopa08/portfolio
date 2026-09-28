@@ -17,7 +17,7 @@ export class HomeComponent implements AfterViewInit {
     // Vérifie si l'application est en cours d'exécution dans le navigateur
     if (isPlatformBrowser(this.platformId)) {
       const options = {
-        strings: ['Web Developer', 'Front-End Developer', 'Apps Developer'],
+        strings: ['Développeuse Full Stack', 'Ingénieure Logiciel', 'Data Science en formation (GCI World)'],
         typeSpeed: 50,
         backSpeed: 25,
         loop: true,
