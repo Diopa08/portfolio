@@ -1,0 +1,30 @@
+<svg viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg2" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#FFA500"/>
+      <stop offset="100%" stop-color="#ff7a00"/>
+    </linearGradient>
+  </defs>
+  <rect width="400" height="300" fill="url(#bg2)"/>
+
+  <!-- depot -->
+  <rect x="185" y="130" width="30" height="30" rx="4" fill="#fff"/>
+  <polygon points="180,130 200,112 220,130" fill="#fff"/>
+
+  <!-- routes to stops -->
+  <g fill="none" stroke="#fff" stroke-width="2.5" opacity="0.9" stroke-linecap="round">
+    <path d="M200,145 C140,100 90,80 60,70"/>
+    <path d="M200,145 C260,90 300,70 340,60"/>
+    <path d="M200,145 C130,190 80,210 50,230"/>
+    <path d="M200,145 C270,200 310,220 350,240"/>
+  </g>
+
+  <g fill="#fff">
+    <circle cx="60" cy="70" r="9"/>
+    <circle cx="340" cy="60" r="9"/>
+    <circle cx="50" cy="230" r="9"/>
+    <circle cx="350" cy="240" r="9"/>
+  </g>
+
+  <text x="200" y="270" font-family="Poppins, sans-serif" font-size="20" font-weight="600" fill="#fff" text-anchor="middle" opacity="0.95">MPVRP Solver</text>
+</svg>
