@@ -16,7 +16,8 @@ export class ProjectsComponent {
       title: 'formlang – de l’automate fini à la machine universelle',
       description: 'Bibliothèque Python unique implémentant AFD/AFN, automates à pile, automates d’arbres et machine de Turing universelle, réutilisée dans 4 applications (Shield, Morpho, HashCons, MTU) sans jamais réécrire les algorithmes. Preuves théoriques et tests pytest.',
       technos: ['Python', 'pytest', 'Théorie des langages'],
-      icon: 'fa-solid fa-diagram-project'
+      icon: 'fa-solid fa-diagram-project',
+      link: 'https://github.com/Diopa08/dossou_perseverance_agbogba_silas_formlang-'
     },
     {
       title: 'Solveur MPVRP-CC (optimisation)',
